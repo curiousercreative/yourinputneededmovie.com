@@ -140,7 +140,7 @@ em, i {
 --------------- */
 
 body {
-	margin: 35px 0 0 2.1875%;
+	margin: 35px auto 0;
 	font: 14px/1.43em 'museo_sans100', sans-serif;
 	width: 95.625%;
 	color: #2e2e2e;
