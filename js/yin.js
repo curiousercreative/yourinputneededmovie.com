@@ -5,6 +5,7 @@ jQuery.js contains core + ui effects core & exists function
 contact me if you want to use it
 winston@curiousercreative.com
  - - - - - - - - - - - - - - - - - - -*/
+    preserveAspect = false;
 
 // Execute when all downloads are complete
     $(window).load(function () {
@@ -19,31 +20,59 @@ winston@curiousercreative.com
     $(document).ready(function () {            
     // Website scaling
         scaleWebsite = function () {
-            var w = $(window).width()*0.95625;
-            var h = $(window).height();
+            if ($(window).width() > 1399) {
+                preserveAspect = true;
+            }
+            else preserveAspect = false;
             
-            if (w/(h-35-$('#footer').height()) > 2125/1460) {
-            // It won't fit, manually set the width and let it center
-                var newWidth = (h-35-$('#footer').height())*2125/1460+'px';
+            if (preserveAspect) {
+                var w = $(window).width()*0.95625;
+                var h = $(window).height();
+                
+                if (w/(h-35-$('#footer').height()) > 2125/1460) {
+                // It won't fit, manually set the width and let it center
+                    var newWidth = (h-35-$('#footer').height())*2125/1460+'px';
+                }
+                else {
+                // It'll fit, scale up
+                    var newWidth = window.outerWidth * 0.95625;
+                }
+                
+            // Set the width of the body
+                $('body').css('width', newWidth);
+                
+            // Set the width and margin of the footer
+                $('#footer').css({
+                    width: newWidth,
+                    left: ($(window).width()-$('body').width())/2+'px',
+                    position: 'fixed'
+                }); 
             }
             else {
-            // It'll fit, scale up
-                var newWidth = '95.625%';
+                $('body').css('width', "95.625%");
             }
-            
-        // Set the width of the body
-            $('body').css('width', newWidth);
-            
-        // Set the width and margin of the footer
-            $('#footer').width(newWidth);
-            $('#footer').css({
-                width: newWidth,
-                left: ($(window).width()-$('body').width())/2+'px'
-            });
     
         // Set the appropriate font-size
             fontSize = $('body').width() * 14/1530;
+            fontSize = fontSize < 12 ? 12 : fontSize;
             $('body').css('font-size', fontSize+'px');
+            
+        // Adjust footer
+            if (!preserveAspect) {
+                if ($('body').height() + $('#footer').height() +fontSize > $(window).height()) {
+                    $('body').css('padding-bottom', $('#footer').height());
+                    $('#footer').css({
+                        position: 'absolute',
+                        left: 0
+                    });
+                }
+                else {
+                    $('#footer').css({
+                        position: 'fixed',
+                        left: '2.1875%'
+                    });
+                }
+            }
         }
         
     // Scale video

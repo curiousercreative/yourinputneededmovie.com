@@ -144,6 +144,7 @@ body {
 	font: 14px/1.43em 'museo_sans100', sans-serif;
 	width: 95.625%;
 	color: #2e2e2e;
+	position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -314,6 +315,10 @@ label {
 	font-size: 1.14em;
 	line-height: 1.5em;
 	margin-top: 0.375em;
+}
+
+.word iframe {
+	width: 100%;
 }
 
 .contact a {
