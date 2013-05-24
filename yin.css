@@ -183,7 +183,7 @@ a:hover {
 }
 
 strong, b { 
-	
+	font-family: 'museo_sans300';
 }
 
 em, i {
@@ -207,25 +207,54 @@ p {
 
 /* Form styles */
 
+form {
+	height: 2.5em;
+	margin-top: 0.43em;
+}
+
 label {
 	display: none;
 }
 
 input,
 textarea {
-	
+	height: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+input[type=text],
+input[type=email] {
+	padding: 0.22em 0.45em;
+    width: 75%;
+	font: 1.57em/1em 'museo_sans100', sans-serif;
+	color: #709ae8;
+	border: none;
+	background: #f2f2f2;
+}
+
+input[type=submit] {
+	font: 1.29em/1em 'dekar', sans-serif;
+	color: white;
+	background: #ff6600;
+	border: none;
+	padding: 0.44em 0.833em;
+	float: right;
+	text-transform: lowercase;
+	cursor: pointer;
 }
 
 ::-webkit-input-placeholder {
-    
+    text-transform: uppercase;
 }
 
 :-moz-placeholder {
-    
+    text-transform: uppercase;
 }
 
 :-ms-input-placeholder {
-    
+    text-transform: uppercase;
 }
 
 label {
@@ -295,10 +324,6 @@ label {
 	font-size: 1.82em;
 	line-height: 1.54em;
 	margin-bottom: 1em;
-}
-
-#lead_in strong {
-	font-family: 'museo_sans300';
 }
 
 #video {
