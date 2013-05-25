@@ -164,7 +164,7 @@ h2 {
 	font-size: 2em;
 	line-height: 0.86em;
 	letter-spacing: 0.075em;
-	margin: 0 0 0.2em;
+	margin: 0 0 0.5em;
 }
 
 h3 {
@@ -360,7 +360,7 @@ label {
 }
 
 .right h2 + p {
-	margin-top: 0.375em;
+	margin-top: -0.375em;
 }
 
 .crew .col.half {
@@ -389,6 +389,7 @@ label {
 
 .twitter iframe {
 	width: 100%;
+	margin-top: -12px;
 }
 
 .updates p {
