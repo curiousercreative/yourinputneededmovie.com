@@ -140,14 +140,14 @@ em, i {
 --------------- */
 
 body {
-	margin: 35px auto 0;
+	margin: 1.5em auto 0;
 	font: 14px/1.43em 'museo_sans100', sans-serif;
 	width: 95.625%;
 	color: #2e2e2e;
 	position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
 	font-family: 'dekar';
 	text-transform: lowercase;
 }
@@ -164,7 +164,7 @@ h2 {
 	font-size: 2em;
 	line-height: 0.86em;
 	letter-spacing: 0.075em;
-	margin: -0.1em 0 0.2em;
+	margin: 0 0 0.2em;
 }
 
 h3 {
@@ -174,7 +174,18 @@ h3 {
 	letter-spacing: 0.075em;
 }
 
+h4 {
+	font: 1.14em/1.25em 'museo_sans300', sans-serif;
+	text-transform: uppercase;
+}
+
+h5 {
+	font: 1em/1.167em 'museo_sans500_italic', sans-serif;
+	white-space: nowrap;
+}
+
 a {
+	font-family: 'museo_sans500_italic', sans-serif;
 	color: #ff6600;
 }
 
@@ -201,7 +212,6 @@ em b {
 }
 
 p {
-	text-align: justify;
 	margin-top: 0.43em;
 }
 
@@ -229,7 +239,7 @@ input[type=email] {
 	padding: 0.22em 0.45em;
     width: 75%;
 	font: 1.57em/1em 'museo_sans100', sans-serif;
-	color: #709ae8;
+	color: #ff6600;
 	border: none;
 	background: #f2f2f2;
 }
@@ -239,7 +249,7 @@ input[type=submit] {
 	color: white;
 	background: #ff6600;
 	border: none;
-	padding: 0.44em 0.833em;
+	padding: 0 0.833em;
 	float: right;
 	text-transform: lowercase;
 	cursor: pointer;
@@ -290,8 +300,12 @@ label {
 	width: 66%;
 }
 
-.row + .row {
-	margin-top: 1.14em;
+.col.half {
+	width: 48.5%;
+}
+
+.half + .half {
+	margin-left: 3%;
 }
 
 .bg {
@@ -316,34 +330,69 @@ label {
 /* -------------
   Main Content styles
 --------------- */
-#header h1 {
-	margin-bottom: 0em;
+#header {
+    margin-bottom: 1em;
 }
 
 #lead_in {
-	font-size: 1.82em;
+	font-size: 2.14em;
 	line-height: 1.54em;
-	margin-bottom: 1em;
+	margin-bottom: 0.25em;
 }
 
 #video {
 	width: 100%;
 	height: 552px;
+	margin-bottom: 1em;
 }
 
-.synopsis {
-	margin-bottom: 1.25em;
+.right div + div {
+	margin-top: 2.5em;
 }
 
-.synopsis p,
-.get_involved p {
+.right p {
 	font-size: 1.14em;
-	line-height: 1.5em;
+	line-height: 1.625em;
+}
+
+.right p + p {
+	margin-top: 1em;
+}
+
+.right h2 + p {
 	margin-top: 0.375em;
 }
 
-.word iframe {
+.crew .col.half {
+    margin: 0;
+    width: 49%;
+}
+
+.crew .col.half + .half {
+    margin-left: 2%;
+}
+
+.crew .col_container + .col_container {
+    margin-top: 1em;
+}
+
+.profile img {
+	float: left;
+	margin-right: 0.5em;
+	max-width: 33.33%;
+}
+
+.profile p {
+	line-height: 1.167em;
+	margin-top: 0.33em;
+}
+
+.twitter iframe {
 	width: 100%;
+}
+
+.updates p {
+    font-size: 1em;
 }
 
 .contact a {
