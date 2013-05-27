@@ -153,7 +153,7 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 8.57em;
+	font-size: 9em;
 	line-height: 1em;
 	letter-spacing: 0.05em;
 	color: #ff6600;
@@ -332,7 +332,36 @@ label {
   Main Content styles
 --------------- */
 #header {
-    margin-bottom: 1em;
+	position: relative;
+}
+
+#header h1 {
+    margin-bottom: 0.11em;
+	display: inline-block;
+}
+
+#social_buttons {
+	padding-top: 2.9em;
+	float: right;
+}
+
+#social_buttons > * {
+	display: block;
+	margin-left: 2.14em;
+	width: 4.3em;
+	height: 4.3em;
+	background: #79a0e9;
+	float: right;
+	text-align: center;
+}
+
+#social_buttons > *:hover {
+	background: #ff6600;
+}
+
+#social_buttons img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 #lead_in {
@@ -423,4 +452,43 @@ label {
 #footer a {
 	font-weight: bold;
 	color: #2e2e2e;
+}
+
+/* -------------
+  Responsive!
+--------------- */
+
+@media (max-width: 1250px) {
+	#header {
+		padding-right: 5em;
+	}
+	
+	#header h1 {
+		width: 90%;
+	}
+	
+	#social_buttons {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		height: 100%;
+		padding-bottom: 1em;
+		padding-top: 0.8em;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 4em;
+	}
+	
+	#social_buttons > * {
+		height: 4em;
+		float: none;
+		width: auto;
+		max-width: none;
+		margin-left: 0;
+	}
+	
+	#social_buttons > * + * {
+		margin-top: 1.45em;
+	}
 }
