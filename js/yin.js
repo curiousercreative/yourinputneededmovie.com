@@ -6,6 +6,7 @@ contact me if you want to use it
 winston@curiousercreative.com
  - - - - - - - - - - - - - - - - - - -*/
     preserveAspect = false;
+    aspectRatio = 1495/1023;
 
 // Execute when all downloads are complete
     $(window).load(function () {
@@ -29,9 +30,13 @@ winston@curiousercreative.com
                 var w = $(window).width()*0.95625;
                 var h = $(window).height();
                 
-                if (w/(h-35-$('#footer').height()) > 2125/1460) {
+            // Set a temporary fontSize
+                fontSize = $('body').width() * 14/1530;
+                fontSize = fontSize < 12 ? 12 : fontSize;
+                
+                if (w/(h-fontSize-$('#footer').height()) > aspectRatio) {
                 // It won't fit, manually set the width and let it center
-                    var newWidth = (h-35-$('#footer').height())*2125/1460+'px';
+                    var newWidth = (h-fontSize-$('#footer').height())*aspectRatio+'px';
                 }
                 else {
                 // It'll fit, scale up
@@ -60,7 +65,7 @@ winston@curiousercreative.com
         // Adjust footer
             if (!preserveAspect) {
                 if ($('body').height() + $('#footer').height() +fontSize > $(window).height()) {
-                    $('body').css('padding-bottom', $('#footer').height());
+                    $('body').css('padding-bottom', $('#footer').height()+fontSize/2);
                     $('#footer').css({
                         position: 'absolute',
                         left: 0
