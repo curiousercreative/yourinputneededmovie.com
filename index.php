@@ -174,7 +174,7 @@
         </div> <!-- end .col_container -->
         
         <div id="footer">
-            Your Input Needed Documentary &copy; 2013. A <a href="http://jeffreyburas.com">Jeffrey Buras</a> film in association with <a href="http://curiousercreative.com">Curiouser Creative</a>. For more information, please contact <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!">info@yourinputneededdoc.com</a>
+            Your Input Needed Documentary &copy; <?php print date('Y'); ?> A <a href="http://jeffreyburas.com">Jeffrey Buras</a> film in association with <a href="http://curiousercreative.com">Curiouser Creative</a>. For more information, please contact <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!">info@yourinputneededdoc.com</a>
         </div>
         
         <script>
