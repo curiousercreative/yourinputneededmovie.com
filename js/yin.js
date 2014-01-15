@@ -6,7 +6,7 @@ contact me if you want to use it
 winston@curiousercreative.com
  - - - - - - - - - - - - - - - - - - -*/
     preserveAspect = false;
-    aspectRatio = 1495/1023;
+    aspectRatio = 1.6;
 
 // Execute when all downloads are complete
     $(window).load(function () {
@@ -63,26 +63,61 @@ winston@curiousercreative.com
             $('body').css('font-size', fontSize+'px');
             
         // Adjust footer
-            if (!preserveAspect) {
-                if ($('body').height() + $('#footer').height() +fontSize > $(window).height()) {
-                    $('body').css('padding-bottom', $('#footer').height()+fontSize/2);
-                    $('#footer').css({
-                        position: 'absolute',
-                        left: 0
-                    });
-                }
-                else {
-                    $('#footer').css({
-                        position: 'fixed',
-                        left: '2.1875%'
-                    });
-                }
+            if ($('body').height() + $('#footer').height() + fontSize > $(window).height()) {
+                $('body').css('padding-bottom', $('#footer').height()+fontSize/2);
+                $('#footer').css({
+                    position: 'absolute',
+                    left: 0
+                });
             }
+            else {
+                $('#footer').css({
+                    position: 'fixed',
+                    left: '2.1875%'
+                });
+            }
+        
         }
         
     // Scale video
         scaleVideo = function () {
             $('#video').height($('#video').width()*9/16);   
+        }
+        
+    // Show video
+        showVideo = function () {
+            if (introVideo) {
+                $('#video iframe').css({
+                    position: 'fixed'
+                });
+                
+                if (YT) {
+                    new YT.Player($('#video iframe').get(0), {
+                        videoId: 'video',
+                        events: {
+                            'onStateChange': videoStateChange
+                        }
+                    });
+                }
+                else {
+                    onYouTubeIframeAPIReady = function () {
+                        new YT.Player($('#video iframe').get(0), {
+                            videoId: 'video',
+                            events: {
+                                'onStateChange': videoStateChange
+                            }
+                        });
+                    }
+                }
+            }
+        }
+        
+        videoStateChange = function (data) {
+            if (data.data === 0) {
+                $('#video iframe').css({
+                    position: 'static'
+                });
+            }
         }
         
         $(window).resize(function () {
@@ -92,4 +127,5 @@ winston@curiousercreative.com
         
         scaleWebsite();
         scaleVideo();
+        showVideo();
     });

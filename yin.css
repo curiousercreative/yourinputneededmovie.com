@@ -375,6 +375,15 @@ label {
 	width: 100%;
 	height: 552px;
 	margin-bottom: 1em;
+	background: white;
+}
+
+#video iframe {
+	background: black;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 }
 
 .right div + div {
