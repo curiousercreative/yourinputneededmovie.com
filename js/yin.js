@@ -91,7 +91,9 @@ winston@curiousercreative.com
                     position: 'fixed'
                 });
                 
-                if (YT) {
+            // If the api is ready
+                if (typeof YT !== 'undefined' && typeof YT.Player !== 'undefined') {
+                    console.log(YT.Player);
                     new YT.Player($('#video iframe').get(0), {
                         videoId: 'video',
                         events: {
