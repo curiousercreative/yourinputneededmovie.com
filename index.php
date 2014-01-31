@@ -44,7 +44,6 @@
             introVideo = <?php print $introVideo; ?>
         </script>
         
-        <script id="yt_api" src="http://www.youtube.com/iframe_api" type="text/javascript"></script>
         <script src="js/jquery.js" type="text/javascript"></script>
         <script src="js/yin.js" type="text/javascript"></script>
     </head>
@@ -186,5 +185,6 @@
             ga('create', 'UA-18954559-10', 'yourinputneededmovie.com');
             ga('send', 'pageview');
         </script>
+        <script id="yt_api" src="http://www.youtube.com/iframe_api" type="text/javascript"></script>
     </body>
 </html>
