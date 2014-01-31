@@ -220,8 +220,10 @@ p {
 /* Form styles */
 
 form {
-	height: 2.5em;
-	margin-top: 0.43em;
+    height: 2.5em;
+    margin-top: 0.43em;
+    padding-right: 8em;
+    position: relative;
 }
 
 label {
@@ -236,25 +238,27 @@ textarea {
 	-webkit-box-sizing: border-box;
 }
 
-input[type=text],
-input[type=email] {
-	padding: 0.22em 0.45em;
-    width: 75%;
-	font: 1.57em/1em 'museo_sans100', sans-serif;
-	color: #ff6600;
-	border: none;
-	background: #f2f2f2;
+input[type="text"], input[type="email"] {
+    background: #F2F2F2;
+    border: none;
+    color: #FF6600;
+    display: block;
+    font: 1.57em/1em 'museo_sans100',sans-serif;
+    padding: 0.22em 0.45em;
+    width: 100%;
 }
 
-input[type=submit] {
-	font: 1.29em/1em 'dekar', sans-serif;
-	color: white;
-	background: #ff6600;
-	border: none;
-	padding: 0 0.833em;
-	float: right;
-	text-transform: lowercase;
-	cursor: pointer;
+input[type="submit"] {
+    background:#FF6600;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: 1.29em/1em 'dekar',sans-serif;
+    padding: 0 0.833em;
+    position: absolute;
+    right: 0;
+    text-transform: lowercase;
+    top: 0;
 }
 
 ::-webkit-input-placeholder {
@@ -366,7 +370,7 @@ label {
 }
 
 #lead_in {
-	font-size: 2.14em;
+	font-size: 2.1em;
 	line-height: 1.54em;
 	margin-bottom: 0.25em;
 }
@@ -467,14 +471,42 @@ label {
 /* -------------
   Responsive!
 --------------- */
-
-@media (max-width: 1250px) {
-	#header {
-		padding-right: 5em;
+@media (max-width: 1225px) {
+	#header h1 {
+		font-size: 7em;
 	}
 	
-	#header h1 {
-		width: 90%;
+	#lead_in {
+		font-size: 1.75em;
+	}
+	
+	#social_buttons {
+		padding-top: 1em;
+	}
+	
+	.two-thirds > .col_container {
+		white-space: normal;
+		word-spacing: normal;
+	}
+	
+	.two-thirds > .col_container > .col {
+		display: block;
+		width: auto;
+	}
+	
+	.two-thirds > .col_container > .col + .col {
+		margin-left: 0;
+		margin-top: 2.5em;
+	}
+}
+
+@media (max-width: 1024px) {
+	
+}
+
+@media (max-width: 1023px) {
+	#header {
+		padding-right: 5em;
 	}
 	
 	#social_buttons {
@@ -487,11 +519,11 @@ label {
 		position: absolute;
 		right: 0;
 		top: 0;
-		width: 4em;
+		width: 3em;
 	}
 	
 	#social_buttons > * {
-		height: 4em;
+		height: 3em;
 		float: none;
 		width: auto;
 		max-width: none;
@@ -499,7 +531,87 @@ label {
 	}
 	
 	#social_buttons > * + * {
-		margin-top: 1.45em;
+		margin-top: 1em;
+	}
+}
+
+@media (max-width: 767px) {
+	#header {
+		padding-right: 4em;
+	}
+	
+	body > .col_container {
+		white-space: normal;
+		word-spacing: normal;
+	}
+	
+	body > .col_container > .col {
+		width: auto;
+		display: block;
+	}
+	
+	body > .col_container > .col + .col {
+		margin-left: 0;
+		margin-top: 0.5em;
+	}
+}
+
+@media (max-width: 480px) {
+	#header {
+		padding-right: 3em;
+	}
+	#header h1 {
+		font-size: 4em;
+	}
+	
+	#lead_in {
+		font-size: 1.5em;
+	}
+	
+	#social_buttons {
+		width: 2em;
+	}
+	
+	#social_buttons > * {
+		height: 2em;
+	}
+}
+
+@media (max-width: 479px) {
+	#header {
+		padding-right: 2.5em;
+	}
+
+	#header h1 {
+		font-size: 5em;
+	}
+	
+	#lead_in {
+		font-size: 1.3em;
+	}
+	
+	.crew > .col_container {
+		white-space: normal;
+		word-spacing: normal;
+		display: block;
+		clear: both;
+		overflow: hidden;
+	}
+	
+	.crew > .col_container + .col_container {
+		margin-top: 1em;
+	}
+	
+	.crew .profile.col {
+		display: block;
+		width: auto;
+		overflow: hidden;
+	}
+	
+	.crew .profile.col + .col {
+		clear: both;
+		margin-left: 0;
+		margin-top: 1em;
 	}
 }
 
