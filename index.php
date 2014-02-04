@@ -19,7 +19,7 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
         
-        <link href="yin.css" rel="stylesheet" type="text/css" />
+        <link href="yin.css?1" rel="stylesheet" type="text/css" />
         <!--[if IE]>
             <link href="ie.css" rel="stylesheet" type="text/css" />
         <![endif]-->
