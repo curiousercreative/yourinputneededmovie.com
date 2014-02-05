@@ -45,7 +45,7 @@
         </script>
         
         <script src="js/jquery.js" type="text/javascript"></script>
-        <script src="js/yin.js?1" type="text/javascript"></script>
+        <script src="js/yin.js?2" type="text/javascript"></script>
     </head>
 
     <body>

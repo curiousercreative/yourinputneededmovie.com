@@ -91,6 +91,8 @@ winston@curiousercreative.com
                     position: 'fixed'
                 });
                 
+                $('.updates').css('display', 'none');
+                
             // If the api is ready
                 if (typeof YT !== 'undefined' && typeof YT.Player !== 'undefined') {
                     console.log(YT.Player);
@@ -119,6 +121,8 @@ winston@curiousercreative.com
                 $('#video iframe').css({
                     position: 'static'
                 });
+                
+                $('.updates').css('display', 'block');
             }
         }
         
