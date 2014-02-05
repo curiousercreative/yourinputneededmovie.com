@@ -116,6 +116,51 @@ winston@curiousercreative.com
             }
         }
         
+    // Test white space
+        testWhiteSpace = function () {
+        // Setup some test markup, inline-block elements with spaces between them
+            $('body').append('<div id="testWhiteSpace" style="white-space: nowrap; width: 100px; position: absolute; top: -100%; left: -100%;"> <div style="display: inline-block; margin: 0; padding: 0; width: 33.33333333333333%"></div> <div style="display: inline-block; margin: 0; padding: 0; width: 33.33333333333333%"></div> <div style="display: inline-block; margin: 0; padding: 0; width: 33.33333333333333%"></div></div>');
+            
+        // Check the spacing between two of them
+            var first = $('#testWhiteSpace > div').eq(0);
+            var second = $('#testWhiteSpace > div').eq(1);
+            var pxSpacing = second.position().left - first.width() + first.position().left;
+            var emSpacing = pxSpacing / parseFloat($('#testWhiteSpace').css('font-size'));
+            
+        // Check to make sure this spacing is changing with font-size and then average the two em spacing values
+            $('#testWhiteSpace').css('font-size', '54px');
+            var newPxSpacing = second.position().left - first.width() + first.position().left;
+            var newEmSpacing = newPxSpacing / parseFloat($('#testWhiteSpace').css('font-size'));
+            
+            if (newPxSpacing == pxSpacing) {
+            // The word-spacing isn't changing with font-size, set it as a px value
+                var wordSpacing = pxSpacing + 'px';
+            }
+            else {
+            // The word-spacing is changing with the font-size, average the two emSpacing values
+                var wordSpacing = ((emSpacing + newEmSpacing) / 2) + 'em';
+            }
+            
+        // This is our style rule to apply a fix for it
+            var style = '.col_container { word-spacing: -'+wordSpacing+'; }';
+            $('#testWhiteSpace').css('word-spacing', '-'+wordSpacing);
+            
+        // Append to the head
+            if ($('head #whiteSpaceFix').exists()) $('head #whiteSpaceFix').html(style);
+            else $('head').append('<style id="whiteSpaceFix">'+style+'</style>');
+            
+        // Check to make sure the browser is rendering the negative word-spacing
+            var renderedPxSpacing = second.position().left - first.width() + first.position().left;
+            if (renderedPxSpacing == newPxSpacing) {
+            // It's not rendering the negative white-space, apply a rule for negative margin-right instead
+                style = '.col { margin-right: -'+wordSpacing+';}';
+                $('head #whiteSpaceFix').append(style);
+            }
+            
+        // Clean up the test markup
+            $('#testWhiteSpace').remove();
+        }
+        
         videoStateChange = function (data) {
             if (data.data === 0) {
                 $('#video iframe').css({
@@ -134,4 +179,5 @@ winston@curiousercreative.com
         scaleWebsite();
         scaleVideo();
         showVideo();
+        testWhiteSpace();
     });
