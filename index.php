@@ -42,11 +42,15 @@
             </head>
         <![endif]-->
         <script type="text/javascript">
-            introVideo = <?php print $introVideo; ?>
+            introVideo = <?php print $introVideo; ?>;
+            <?php
+              if (strpos($_SERVER['SERVER_NAME'], '.loc') !== FALSE) print 'var debug = true;';
+              else print 'var debug = false;';
+            ?>
         </script>
         
         <script src="js/jquery.js" type="text/javascript"></script>
-        <script src="js/yin.js?3" type="text/javascript"></script>
+        <script src="js/yin.js?4" type="text/javascript"></script>
     </head>
 
     <body>
@@ -73,7 +77,8 @@
         <div class="col_container">
             <div class="two-thirds col left">
                 <div id="video">
-                    <iframe src="http://www.youtube.com/embed/ZLL9fbBtApA?rel=0<?php if ($introVideo == 'true') print '&autoplay=1'; ?>" frameborder="0" allowfullscreen></iframe>
+                    <div id="player"></div>
+                    <!-- <iframe src="http://www.youtube.com/embed/ZLL9fbBtApA?rel=0<?php if ($introVideo == 'true') print '&autoplay=1'; ?>" frameborder="0" allowfullscreen></iframe> -->
                 </div>
                 
                 <div class="col_container">
@@ -131,7 +136,7 @@
             <div class="third col right">
                 <div class="synopsis">
                     <h2>What's the Story?</h2>
-                    <p>We, as a society, are in the midst of a <strong>radical shift in the way we produce goods</strong>. <a href="http://www.youtube.com/watch?v=yxZPdQvkU-A">View the concept video</a>.</p>
+                    <p>We, as a society, are in the midst of a <strong>radical shift in the way we produce goods</strong>. <a id="conceptVideo" href="http://www.youtube.com/watch?v=yxZPdQvkU-A">View the concept video</a>.</p>
                     <p>
                         The rapid, open and <strong>collaborative nature of the internet</strong> combined with <strong>micro-manufacturing technology</strong>
                         and <strong>decentralized organizing tactics</strong> has transformed community landscapes, product markets and nearly

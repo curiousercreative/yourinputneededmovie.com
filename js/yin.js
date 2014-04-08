@@ -87,35 +87,24 @@ winston@curiousercreative.com
     // Show video
         showVideo = function () {
             if (introVideo) {
+                if (debug) console.log('introVideo takeover');
+                
                 $('#video iframe').css({
                     position: 'fixed'
                 });
                 
                 $('.updates').css('display', 'none');
-                
-            // If the api is ready
-                if (typeof YT !== 'undefined' && typeof YT.Player !== 'undefined') {
-                    console.log(YT.Player);
-                    new YT.Player($('#video iframe').get(0), {
-                        videoId: 'video',
-                        events: {
-                            'onStateChange': videoStateChange
-                        }
-                    });
-                }
-                else {
-                    onYouTubeIframeAPIReady = function () {
-                        new YT.Player($('#video iframe').get(0), {
-                            videoId: 'video',
-                            events: {
-                                'onStateChange': videoStateChange
-                            }
-                        });
-                    }
-                }
             }
         }
-        
+    
+    // Hide Video
+        hideVideo = function () {    
+            $('#video iframe').css({
+                position: 'static'
+            });
+            
+            $('.updates').css('display', 'block');
+        }
     // Test white space
         testWhiteSpace = function () {
         // Setup some test markup, inline-block elements with spaces between them
@@ -161,23 +150,56 @@ winston@curiousercreative.com
             $('#testWhiteSpace').remove();
         }
         
+    // Handler for when api is ready
+        onYouTubeIframeAPIReady = function () {
+            if (debug) console.log('api ready');
+            
+        // Create the video player
+            player = new YT.Player('player', {
+                videoId: 'ZLL9fbBtApA',
+                playerVars: {'autoplay': introVideo ? 1 : 0},
+                events: {'onStateChange': videoStateChange}
+            });
+            
+        // Show it fullscreen
+            if (introVideo) showVideo();   
+        }
+        
+    // Handler for when video state changes
         videoStateChange = function (data) {
-            if (data.data === 0) {
-                $('#video iframe').css({
-                    position: 'static'
-                });
+            if (data.data === YT.PlayerState.ENDED) {
+                if (debug) console.log('video ended');
                 
-                $('.updates').css('display', 'block');
+            // Exit fullscreen
+                hideVideo();
+                
+            // Seekto 0 and pause
+                player.seekTo(0);
+                
+                player.pauseVideo();
             }
         }
         
+    // Concept video link
+        $('a#conceptVideo').click(function (e) {
+           e.preventDefault();
+           player.loadVideoById('yxZPdQvkU-A');
+           player.playVideo();
+        });
+        
+    // Resize 
         $(window).resize(function () {
            scaleWebsite();
            scaleVideo();
         });
         
+    // Esc key hides video
+        $(window).keyup(function (e) {
+            if (e.which == 27) hideVideo();
+        })
+        
+    // Do stuff
         scaleWebsite();
         scaleVideo();
-        showVideo();
         testWhiteSpace();
     });
