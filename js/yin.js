@@ -21,10 +21,13 @@ winston@curiousercreative.com
     $(document).ready(function () {            
     // Website scaling
         scaleWebsite = function () {
+        /* I don't think this works
             if ($(window).width() > 1399) {
                 preserveAspect = true;
             }
             else preserveAspect = false;
+        */
+            preserveAspect = false;
             
             if (preserveAspect) {
                 var w = $(window).width()*0.95625;
