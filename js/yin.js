@@ -173,10 +173,12 @@ winston@curiousercreative.com
             // Exit fullscreen
                 hideVideo();
                 
+        /* this stuff doesn't work reliably
             // Seekto 0 and pause
                 player.seekTo(0);
                 
                 player.pauseVideo();
+        */
             }
         }
         
