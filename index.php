@@ -1,4 +1,5 @@
 <?php
+/* This isn't working for Safari, always starts a new session with browser restart
     session_start();
     if (isset($_SESSION['visited'])) {
         $introVideo = 'false';
@@ -7,6 +8,8 @@
         $introVideo = 'true';
         $_SESSION['visited'] = true;
     }
+*/
+    $introVideo = 'false';
 ?>
 <html>
     <head>
