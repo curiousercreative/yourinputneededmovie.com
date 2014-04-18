@@ -1,5 +1,4 @@
 <?php
-/* Lets skip the intro video it sucks
     session_start();
     if (isset($_SESSION['visited'])) {
         $introVideo = 'false';
@@ -8,9 +7,6 @@
         $introVideo = 'true';
         $_SESSION['visited'] = true;
     }
-*/
-
-    $introVideo = 'false';
 ?>
 <html>
     <head>
