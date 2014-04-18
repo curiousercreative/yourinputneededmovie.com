@@ -50,7 +50,7 @@
         </script>
         
         <script src="js/jquery.js" type="text/javascript"></script>
-        <script src="js/yin.js?4" type="text/javascript"></script>
+        <script src="js/yin.js?5" type="text/javascript"></script>
     </head>
 
     <body>
