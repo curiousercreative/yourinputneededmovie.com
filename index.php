@@ -67,7 +67,7 @@
                 </div>
                 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51a3c89114e54357"></script>
                 AddThis Button END -->
-                <a class="hitrecord" href="http://www.hitrecord.org/collaborations/7635"><span>Record</span></a>
+                <a class="hidden-md hitrecord" href="http://www.hitrecord.org/collaborations/7635"><span class="hidden-xs">Rec<span class="hidden-md">ord</span></span></a>
                 <a href="http://twitter.com/yourinputneeded"><img src="/graphics/yin_twitter.png" alt="Share Your Input Needed Documentary Film via Twitter" /></a>
                 <a href="http://www.facebook.com/YourInputNeeded"><img src="/graphics/yin_fb.png" alt="Share Your Input Needed Documentary Film via Facebook" /></a>
                 <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!"><img src="/graphics/yin_email.png" alt="Share Your Input Needed Documentary Film via email" /></a>

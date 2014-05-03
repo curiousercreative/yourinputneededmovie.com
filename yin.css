@@ -364,13 +364,13 @@ label {
 	text-align: center;
 }
 
-#social_buttons > .hitrecord {
+.hitrecord {
 	border-radius: 50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 }
 
-#social_buttons > .hitrecord span {
+#social_buttons > .hitrecord > span {
 	color: white;
 	display: inline-block;
 	margin-top: 27%;
@@ -553,6 +553,14 @@ label {
 	#social_buttons > * + * {
 		margin-top: 1em;
 	}
+	
+	#social_buttons > .hitrecord + * {
+		margin-top: 0;
+	}
+	
+	.hidden-md {
+		display: none !important;
+	}
 }
 
 @media (max-width: 767px) {
@@ -574,6 +582,10 @@ label {
 		margin-left: 0;
 		margin-top: 0.5em;
 	}
+	
+	.hidden-sm {
+		display: none !important;
+	}
 }
 
 @media (max-width: 480px) {
@@ -594,6 +606,14 @@ label {
 	
 	#social_buttons > * {
 		height: 2em;
+	}
+	
+	#social_buttons > .hitrecord {
+		background: red;
+	}
+	
+	.hidden-xs {
+		display: none !important;
 	}
 }
 
