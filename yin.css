@@ -366,6 +366,8 @@ label {
 
 #social_buttons > .hitrecord {
 	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
 }
 
 #social_buttons > .hitrecord span {
