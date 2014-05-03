@@ -23,7 +23,7 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
         
-        <link href="yin.css?1" rel="stylesheet" type="text/css" />
+        <link href="yin.css?6" rel="stylesheet" type="text/css" />
         <!--[if IE]>
             <link href="ie.css" rel="stylesheet" type="text/css" />
         <![endif]-->
@@ -67,6 +67,7 @@
                 </div>
                 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51a3c89114e54357"></script>
                 AddThis Button END -->
+                <a class="hitrecord" href="http://www.hitrecord.org/collaborations/7635"><span>Record</span></a>
                 <a href="http://twitter.com/yourinputneeded"><img src="/graphics/yin_twitter.png" alt="Share Your Input Needed Documentary Film via Twitter" /></a>
                 <a href="http://www.facebook.com/YourInputNeeded"><img src="/graphics/yin_fb.png" alt="Share Your Input Needed Documentary Film via Facebook" /></a>
                 <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!"><img src="/graphics/yin_email.png" alt="Share Your Input Needed Documentary Film via email" /></a>
@@ -91,7 +92,7 @@
                             <div class="profile col half">
                                 <img src="/graphics/jeffrey.jpg" alt="Jeffrey Buras, Your Input Needed Director" />
                                 <h4>Jeffrey Buras</h4>
-                                <h5>Producer/Director</h5>
+                                <h5>Director</h5>
                                 <p>
                                     Documentary Filmmaker, Cinematographer, Austin resident and American University graduate.
                                 </p>
@@ -100,7 +101,7 @@
                             <div class="profile col half">
                                 <img src="/graphics/liza.jpg" alt="Liza Gipsova, Your Input Needed Director of Photography" />
                                 <h4>Liza Gipsova</h4>
-                                <h5>Director of Photography</h5>
+                                <h5>Cinematographer</h5>
                                 <p>
                                     Multidisciplinary creative, Curiouser Creative co-founder, American University graduate and DC-area native.
                                 </p>
@@ -111,18 +112,18 @@
                             <div class="profile col half">
                                 <img src="/graphics/winston.jpg" alt="Winston Hoy, Your Input Needed Co-Producer" />
                                 <h4>Winston Hoy</h4>
-                                <h5>Co-Producer</h5>
+                                <h5>Producer</h5>
                                 <p>
                                     Self-taught filmmaker and web developer, Curiouser Creative co-founder and non-profit activist.
                                 </p>
                             </div> <!-- end .profile -->
                             
                             <div class="profile col half">
-                                <img src="/graphics/brian.jpg" alt="Brian Briskey, Your Input Needed Marketing Director" />
-                                <h4>Brian Briskey</h4>
-                                <h5>Marketing Director</h5>
+                                <img src="/graphics/samantha.jpg" alt="Samantha Rae Lopez, Your Input Needed Social Media & PR Director" />
+                                <h4>Samantha Lopez</h4>
+                                <h5>Public Relations</h5>
                                 <p>
-                                    Collaborator and lover of cause/issue based film, Volunteer Service Medal award winner, Austin resident.
+                                    Film crowdfunder, software engineer, maker of change and opportunity in Texas.
                                 </p>
                             </div> <!-- end .profile -->
                         </div> <!-- end .col_container -->

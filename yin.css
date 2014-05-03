@@ -358,14 +358,28 @@ label {
 	display: block;
 	margin-left: 2.14em;
 	width: 4.3em;
-	height: 4.3em;
+	height: 4em;
 	background: #79a0e9;
 	float: right;
 	text-align: center;
 }
 
+#social_buttons > .hitrecord {
+	border-radius: 50%;
+}
+
+#social_buttons > .hitrecord span {
+	color: white;
+	display: inline-block;
+	margin-top: 27%;
+}
+
 #social_buttons > *:hover {
 	background: #ff6600;
+}
+
+#social_buttons > .hitrecord:hover {
+	background: red;
 }
 
 #social_buttons img {
