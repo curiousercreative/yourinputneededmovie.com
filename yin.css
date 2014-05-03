@@ -159,6 +159,10 @@ h1 {
 	color: #ff6600;
 }
 
+h1 a {
+    font-family: 'dekar';
+}
+
 h2 {
 	color: #709ae8;
 	font-size: 2em;

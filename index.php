@@ -160,7 +160,7 @@
                     </p>
                     
                     <p>
-                        For more information or get involved with the core team, e-mail us at <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!">info@yourinputneededdoc.com</a>.
+                        We're also on the eve of a crowdfunding campaign. Stay tuned for the campaign launch next week! For more information or get involved with the core team, e-mail us at <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!">info@yourinputneededdoc.com</a>.
                     </p>
                 </div> <!-- end .get_involved -->
                 
