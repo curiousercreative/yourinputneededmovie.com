@@ -121,7 +121,7 @@
                             <div class="profile col half">
                                 <img src="/graphics/samantha.jpg" alt="Samantha Rae Lopez, Your Input Needed Social Media & PR Director" />
                                 <h4>Samantha Lopez</h4>
-                                <h5>Public Relations</h5>
+                                <h5>Publicist</h5>
                                 <p>
                                     Film crowdfunder, software engineer, maker of change and opportunity in Texas.
                                 </p>
@@ -161,7 +161,7 @@
                     </p>
                     
                     <p>
-                        We're also on the eve of a crowdfunding campaign. Stay tuned for the campaign launch next week! For more information or get involved with the core team, e-mail us at <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!">info@yourinputneededdoc.com</a>.
+                        We're currently running a <a href="http://igg.me/at/YourInputNeeded">crowd funding campaign</a> and need your help sharing the campaign with friends. For more information or get involved with the core team, e-mail us at <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!">info@yourinputneededdoc.com</a>.
                     </p>
                 </div> <!-- end .get_involved -->
                 
