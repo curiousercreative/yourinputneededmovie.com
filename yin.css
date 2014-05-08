@@ -474,7 +474,6 @@ label {
 #footer {
     border-top: 1px solid #5E2800;
     text-align: center;
-	white-space: nowrap;
 	position: fixed;
 	bottom: 0;
 	left: 2.1875%;

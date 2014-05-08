@@ -23,7 +23,7 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
         
-        <link href="yin.css?6" rel="stylesheet" type="text/css" />
+        <link href="yin.css?7" rel="stylesheet" type="text/css" />
         <!--[if IE]>
             <link href="ie.css" rel="stylesheet" type="text/css" />
         <![endif]-->
@@ -183,7 +183,7 @@
         </div> <!-- end .col_container -->
         
         <div id="footer">
-            Your Input Needed Documentary &copy; <?php print date('Y'); ?> A <a href="http://jeffreyburas.com">Jeffrey Buras</a> film in association with <a href="http://curiousercreative.com">Curiouser Creative</a>. For more information, please contact <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!">info@yourinputneededdoc.com</a>
+            Your Input Needed is a <a href="http://jeffreyburas.com">Jeffrey Buras</a> film in association with <a href="http://curiousercreative.com">Curiouser Creative Studio</a>. For more information, please contact <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!">info@yourinputneededdoc.com</a>
         </div>
         
         <script>
