@@ -161,7 +161,7 @@
                     </p>
                     
                     <p>
-                        We're currently running a <a href="http://igg.me/at/YourInputNeeded">crowd funding campaign</a> and need your help sharing the campaign with friends. For more information or get involved with the core team, e-mail us at <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!">info@yourinputneededdoc.com</a>.
+                        We currently need your help sharing the project with the community. For more information or get involved with the core team, e-mail us at <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!">info@yourinputneededdoc.com</a>.
                     </p>
                 </div> <!-- end .get_involved -->
                 
