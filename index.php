@@ -13,25 +13,25 @@
 ?>
 <html>
     <head>
-        
+
         <title>Your Input Needed - Documentary Feature Film - The Story of Hackers, Makers, Movers and Shakers</title>
-        
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes">
-            
-        <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
-        
+
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
         <link href="yin.css?7" rel="stylesheet" type="text/css" />
         <!--[if IE]>
             <link href="ie.css" rel="stylesheet" type="text/css" />
         <![endif]-->
-        
+
         <!--[if IE 7]>
-            
+
         <![endif]-->
-        
+
         <!--[if lt IE 7]>
             <script>
                 alert("Your web browser does not support features required to display this website. Please try browsing in either Firefox or Google Chrome (both are free)");
@@ -51,17 +51,17 @@
               else print 'var debug = false;';
             ?>
         </script>
-        
+
         <script src="js/jquery.js" type="text/javascript"></script>
         <script src="js/yin.js?5" type="text/javascript"></script>
     </head>
 
     <body>
-        
+
         <div id="header">
             <h1>Your Input Needed</h1>
             <div id="social_buttons">
-                <!-- AddThis Button BEGIN 
+                <!-- AddThis Button BEGIN
                 <div class="addthis_toolbox addthis_default_style">
                     <a class="addthis_counter addthis_pill_style"><img src="/graphics/yin_share.png" alt="Share Your Input Needed Documentary Film" /></a>
                 </div>
@@ -72,19 +72,19 @@
                 <a href="http://www.facebook.com/YourInputNeeded"><img src="/graphics/yin_fb.png" alt="Share Your Input Needed Documentary Film via Facebook" /></a>
                 <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!"><img src="/graphics/yin_email.png" alt="Share Your Input Needed Documentary Film via email" /></a>
             </div> <!-- end #social_buttons -->
-            
+
             <div id="lead_in">
                 A wiki-documentary about hackers, makers, movers &amp; shakers re-making the world without permission.
             </div>
         </div> <!-- end #header -->
-        
+
         <div class="col_container">
             <div class="two-thirds col left">
                 <div id="video">
                     <div id="player"></div>
                     <!-- <iframe src="http://www.youtube.com/embed/ZLL9fbBtApA?rel=0<?php if ($introVideo == 'true') print '&autoplay=1'; ?>" frameborder="0" allowfullscreen></iframe> -->
                 </div>
-                
+
                 <div class="col_container">
                     <div class="crew half col">
                         <h2>Who's involved?</h2>
@@ -97,7 +97,7 @@
                                     Documentary Filmmaker, Cinematographer, Austin resident and American University graduate.
                                 </p>
                             </div> <!-- end .profile -->
-                            
+
                             <div class="profile col half">
                                 <img src="/graphics/liza.jpg" alt="Liza Gipsova, Your Input Needed Director of Photography" />
                                 <h4>Liza Gipsova</h4>
@@ -107,7 +107,7 @@
                                 </p>
                             </div> <!-- end .profile -->
                         </div> <!-- end .col_container -->
-                        
+
                         <div class="col_container">
                             <div class="profile col half">
                                 <img src="/graphics/winston.jpg" alt="Winston Hoy, Your Input Needed Co-Producer" />
@@ -117,7 +117,7 @@
                                     Self-taught filmmaker and web developer, Curiouser Creative co-founder and non-profit activist.
                                 </p>
                             </div> <!-- end .profile -->
-                            
+
                             <div class="profile col half">
                                 <img src="/graphics/samantha.jpg" alt="Samantha Rae Lopez, Your Input Needed Social Media & PR Director" />
                                 <h4>Samantha Lopez</h4>
@@ -128,7 +128,7 @@
                             </div> <!-- end .profile -->
                         </div> <!-- end .col_container -->
                     </div> <!-- end .crew -->
-                    
+
                     <div class="twitter half col">
                         <h2>What's New?</h2>
                         <a class="twitter-timeline"  href="https://twitter.com/YourInputNeeded"  data-widget-id="339116407449063425" data-chrome="noheader nofooter noborders noscrollbar transparent" data-tweet-limit="2">Tweets by @YourInputNeeded</a>
@@ -136,7 +136,7 @@
                     </div> <!-- end .twitter -->
                 </div> <!-- end .col-container -->
             </div> <!-- end .two-thirds -->
-            
+
             <div class="third col right">
                 <div class="synopsis">
                     <h2>What's the Story?</h2>
@@ -151,7 +151,7 @@
                         Your Input Needed is an <strong>open source, feature-length documentary exploring the huge changes on the horizon</strong>, and your input is, in fact, needed!
                     </p>
                 </div> <!-- end .synopsis -->
-                
+
                 <div class="get_involved">
                     <h2>How Can You Help?</h2>
                     <p>
@@ -159,12 +159,12 @@
                         publicly available for you view and download, but also to comment, contribute to and share. It's all happening at
                         <a href="http://www.hitrecord.org/collaborations/7635">HitRecord.com</a>.
                     </p>
-                    
+
                     <p>
-                        We currently need your help sharing the project with the community. For more information or get involved with the core team, e-mail us at <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!">info@yourinputneededdoc.com</a>.
+                        We currently need your help sharing the project with the community. For more information or get involved with the core team, e-mail us at <a href="mailto:info@yourinputneededmovie.com?subject=Here is my input!">info@yourinputneededmovie.com</a>.
                     </p>
                 </div> <!-- end .get_involved -->
-                
+
                 <div class="updates">
                     <h2>Want Updates?</h2>
                     <!-- Begin MailChimp Signup Form -->
@@ -181,17 +181,17 @@
                 </div> <!-- end .updates -->
             </div> <!-- end .third -->
         </div> <!-- end .col_container -->
-        
+
         <div id="footer">
             Your Input Needed is a <a href="http://jeffreyburas.com">Jeffrey Buras</a> film in association with <a href="http://curiousercreative.com">Curiouser Creative Studio</a>. For more information, please contact <a href="mailto:info@yourinputneededdoc.com?subject=Here's my input!">info@yourinputneededdoc.com</a>
         </div>
-        
+
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          
+
             ga('create', 'UA-18954559-10', 'yourinputneededmovie.com');
             ga('send', 'pageview');
         </script>
